@@ -1,0 +1,122 @@
+.items_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    margin-bottom: 5rem;
+}
+.item_left{
+    height: 30rem;
+    padding: 2rem;
+    background: #6C3483;
+    border-radius:10px 0 0  10px;
+    -webkit-border-radius:10px 0 0  10px;
+    -moz-border-radius:10px 0 0  10px;
+    -ms-border-radius:10px 0 0  10px;
+    -o-border-radius:10px 0 0  10px;
+}
+.item-right{
+    height: 30rem;
+    padding: 2rem;
+    background: #620575;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    border-radius: 0 10px 10px 0;
+    -webkit-border-radius: 0 10px 10px 0;
+    -moz-border-radius: 0 10px 10px 0;
+    -ms-border-radius: 0 10px 10px 0;
+    -o-border-radius: 0 10px 10px 0;
+}
+.library_form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    color: #000;
+    margin: auto;
+    padding: 2rem;
+    border: 1px solid cyan;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.library_form select{
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    border: 0;
+    outline: 0;
+}
+.library_form option{
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    border: 0;
+    outline: 0;
+}
+.library_form button{
+    width: fit-content;
+}
+.identification{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+.identification span{
+    font-size: 1.2rem;
+    padding: 1rem;
+    color: #000;
+    background-color: rgb(42, 240, 141);
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+}
+.identification span:hover{
+    cursor: pointer;
+    color: rgb(113, 5, 163);
+}
+.login,.login_stu{
+    position: absolute;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)),url('../img/uv62fg5z3vl21.jpg');
+    top: 15%;
+    padding: 3rem;
+    left: 30%;
+    border-radius: 7%;
+    -webkit-border-radius: 7%;
+    -moz-border-radius: 7%;
+    -ms-border-radius: 7%;
+    -o-border-radius: 7%;
+    display: none;
+}
+.login input,.login_stu input{
+    background: #fff;
+    color: #000;
+}
+@media screen and (max-width:1024px) {
+    /*-----LIBRARY---------*/
+    .items_container{
+        grid-template-columns: 1fr;
+    }
+    .identification{
+        flex-direction: column;
+    }
+    .login,.login_stu{
+        top: 25%;
+        left: 25%;
+    }
+}
+@media screen and (max-width:600px) {
+    .login,.login_stu{
+        top: 35%;
+        padding: 1rem;
+        left: 2%;
+        right: 2%;
+    }
+}
